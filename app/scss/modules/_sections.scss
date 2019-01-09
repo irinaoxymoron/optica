@@ -1,0 +1,15 @@
+/*** Sections ***/
+section{
+  @include clear-fix();
+  padding: 60px;
+}
+
+.section {
+  &__content {
+    order: 1;
+
+    @include for-tablet-landscape-up {
+      order: 0;
+    }
+  }
+}
